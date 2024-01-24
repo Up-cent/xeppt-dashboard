@@ -1,0 +1,27 @@
+.button {
+  padding: 10px 24px;
+  border-radius: 100px;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button__filter {
+  border: 1px solid #DB9E2F;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: #DB9E2F;
+  margin-right: 16px;
+}
+
+.button__filter:hover {
+  background-color: #DB9E2F;
+  color: #FDFDFD;
+}
+
+.selected {
+  background-color: #DB9E2F;
+  color: #FDFDFD;
+}

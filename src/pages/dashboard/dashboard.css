@@ -1,0 +1,178 @@
+.dashboard {
+  margin-top: 72px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.dashboard__title {
+  margin: 0;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  color: #282828;
+  margin-bottom: 24px;
+}
+
+.dashboard__balance {
+  width: 200px;
+  height: 130px;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #F5CC82;
+  background: #FFF8EC;
+  margin-bottom: 65px;
+}
+
+.dashboard__balance-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin-bottom: 8px;
+}
+
+.dashboard__balance-currency {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  color: #282828;
+}
+
+.dashboard__card {
+  position: relative;
+  width: 312px;
+  height: 196px;
+  margin-right: 24px;
+  white-space: nowrap;
+}
+
+.dashboard__card-empty {
+  display: flex;
+  padding: 27px 21px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  border: 1px solid #E1DCD0;
+  background: #F8F6F1;
+}
+
+.dashboard__card-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 65px;
+}
+
+.dashboard__card-image {
+  width: 312px;
+  height: 196px;
+}
+
+.dashboard__card-status {
+  display: inline-block;
+  padding: 5px 16px;
+  border-radius: 20px;
+  background: #FDF1DC;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  color: #BE8317;
+  margin-bottom: 23px;
+}
+
+.dashboard__card-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.dashboard__card-balance {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  color: #F5F5F5;
+}
+
+.dashboard__card-balance-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-bottom: 45px;
+}
+
+.dashboard__card-balance-text:last-of-type {
+  margin-bottom: 0;
+}
+
+.dashboard__add {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 22px;
+}
+
+.dashboard__card-empty-text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  color: #282828;
+}
+
+.dashboard__buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard__paymnets {
+  margin-top: 20px;
+}
+
+.dashboard__part:first-of-type {
+  width: 70%;
+}
+
+.dashboard__part:last-of-type {
+  width: 30%;
+}
+
+.dashboard__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.dashboard__button-wrapper-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .dashboard__part:first-of-type {
+    width: 100%;
+  }
+  
+  .dashboard__part:last-of-type {
+    width: 100%;
+  }
+
+  .dashboard {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard__button-wrapper-mobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dashboard__button-wrapper-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 686px) {
+  .dashboard__card-wrapper {
+    overflow-x: scroll;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+}
